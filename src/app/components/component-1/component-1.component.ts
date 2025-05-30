@@ -1,4 +1,3 @@
-import { lastValueFrom } from 'rxjs';
 import { BussinessService } from './../BussinessService.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component-1.component.css']
 })
 export class Component1Component implements OnInit {
-  message = "";
+  isToShowNextStep = false;
   constructor(
     private readonly bussinessService: BussinessService
   ){ }
 
-   async ngOnInit() {
-     await this.start();
+    ngOnInit() {
+      this.start();
   }
   
-  async start() {
-    this.message = await this.bussinessService.getMessage();
+   start() {
+    this.isToShowNextStep = this.bussinessService.get();
   }
 }

@@ -1,2 +1,27 @@
+<div class="challenge-container" *ngIf="isToShowNextStep">
+  <div class="challenge-card">
+    <p class="challenge-success-message"><strong>Boooooa!</strong></p>
 
-<strong class="message"> {{ message}}</strong>
+    <p class="challenge-intro">
+      No componente `app-header`, quando o usuário interagir com o campo e clicar no botão "Enviar", o dado digitado deve ser propagado para os outros componentes da aplicação, conforme a estrutura prevista.
+    </p>
+
+    <p class="challenge-intro">
+      Os componentes que receberem essa informação devem atualizar seu conteúdo exibido de maneira adequada.
+    </p>
+
+    <p class="challenge-important-note">
+      Lembre-se de aplicar restrições à entrada do usuário e exibir mensagens de erro pertinentes quando necessário.
+    </p>
+
+    <div class="challenge-rules">
+      <h3>Regras de Comunicação:</h3>
+      <ul>
+        <li>Máximo de **5 caracteres**</li>
+        <li>**Somente números**</li>
+      </ul>
+    </div>
+
+    <a [routerLink]="['/home']" class="challenge-start-button">Vamos começar!</a>
+  </div>
+</div>

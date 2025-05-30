@@ -1,0 +1,74 @@
+/* src/app/simple-input/simple-input.component.css */
+
+.input-container {
+    background-color: #e3f2fd; /* Um azul muito claro, quase branco, do tema do header */
+    padding: 20px; /* Reduzido um pouco para encaixar melhor no header */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra mais sutil */
+    text-align: center;
+    max-width: 400px; /* Largura máxima para o container do input */
+    margin: 0 auto; /* Remove margem superior/inferior para que o header controle o espaçamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Espaço entre os elementos */
+    /* Remove a cor da borda para usar a do input */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Borda muito sutil para o container */
+}
+
+h2 {
+    color: #2c3e50; /* Cor de texto mais escura para contraste */
+    margin-bottom: 5px; /* Ajuste para o gap */
+    font-size: 1.3em; /* Um pouco menor para caber melhor */
+}
+
+input[type="text"] {
+    width: 100%; /* Ocupa a largura total do container */
+    padding: 10px 12px; /* Ajustado um pouco */
+    border: 1px solid #90caf9; /* Borda azul clara para combinar */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para sombra */
+}
+
+input[type="text"]:focus {
+    border-color: #2196f3; /* Azul mais forte ao focar */
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3); /* Sombra azul ao focar */
+}
+
+input[type="text"]::placeholder {
+    color: #64b5f6; /* Placeholder em tom de azul */
+}
+
+button {
+    background-color: #2196f3; /* Azul primário */
+    color: white;
+    padding: 10px 25px; /* Ajustado um pouco */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: auto;
+}
+
+button:hover {
+    background-color: #1976d2; /* Azul mais escuro no hover */
+    transform: translateY(-1px); /* Pequeno efeito de "levantar" mais sutil */
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+p {
+    margin-top: 10px; /* Reduzido o espaço */
+    font-size: 1em; /* Um pouco menor */
+    color: #424242; /* Cor de texto mais neutra */
+}
+
+strong {
+    color: #1976d2; /* Cor mais escura para o valor destacado */
+}

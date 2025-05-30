@@ -1,5 +1,122 @@
-
-.message {
-    font-size: 2rem;
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  color: #34495e;
+  margin: 0;
+  background-color: #f5f7fa;
 }
 
+.challenge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.challenge-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 50px;
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #eceff1;
+}
+
+.challenge-success-message {
+  font-size: 3em;
+  color: #2ecc71;
+  margin-bottom: 35px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+.challenge-intro {
+  font-size: 1.15em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.challenge-important-note {
+  font-size: 1.1em;
+  color: #d35400;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 18px 25px;
+  border-left: 5px solid #d35400;
+  background-color: #fffaf0;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.challenge-rules {
+  background-color: #f8f9fa;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.challenge-rules h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 12px;
+}
+
+.challenge-rules ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.challenge-rules ul li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #4a5568;
+  display: flex;
+  align-items: flex-start;
+}
+
+.challenge-rules ul li::before {
+  content: "💡";
+  margin-right: 15px;
+  font-size: 1.3em;
+  line-height: 1;
+  flex-shrink: 0;
+  color: #f1c40f;
+}
+
+.challenge-start-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 18px 36px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 45px;
+  letter-spacing: 0.8px;
+}
+
+.challenge-start-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.challenge-start-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

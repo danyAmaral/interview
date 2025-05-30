@@ -1,0 +1,46 @@
+.app-layout-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  grid-template-rows: auto 1fr 1fr;
+  gap: 20px; 
+  height: 100vh; 
+  width: 100vw; 
+}
+
+app-header {
+  grid-column: 1 / span 2;
+  grid-row: 1; 
+  background-color: #a7d9f7; 
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+app-sidebar {
+  grid-row: 2 / span 2;
+  background-color: #c9f0c2; 
+  padding: 25px;
+}
+
+app-component-01 {
+  grid-column: 2; 
+  grid-row: 2; 
+  background-color: #ffe6b3; 
+  padding: 25px;
+}
+
+app-component-02 {
+  grid-column: 2; 
+  grid-row: 3; 
+  background-color: #f7b3b3; 
+  padding: 25px;
+}
+
+app-header, app-sidebar, app-component-01, app-component-02 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
